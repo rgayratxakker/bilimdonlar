@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>bilimdonlar.uz — interaktiv o'quv loyihalari</title>
+<meta name="description" content="Matematika, fizika, tibbiyot, informatika va tillar bo'yicha interaktiv o'quv loyihalari.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+<script>
+try {
+	const savedTheme = localStorage.getItem('bd-theme');
+	if (savedTheme === 'light' || savedTheme === 'dark') document.documentElement.dataset.theme = savedTheme;
+} catch {}
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+<div class="wrap bar">
+<a class="brand" href="index.html"><span class="logo">🎓</span><span>bilimdonlar<b>.uz</b></span></a>
+<div class="top-actions">
+<nav class="links"><a href="#loyihalar">Loyihalar</a><a href="#haqida">Haqida</a></nav>
+<button class="theme-toggle" id="themeToggle" type="button" aria-label="Qorong‘i rejimga o‘tish" title="Qorong‘i rejimga o‘tish">☾</button>
+</div>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="wrap">
+<h1>Bilimni <span>ko'rib, sinab</span> o'rganing</h1>
+<p>Matematika, fizika, tibbiyot, informatika va tillar bo'yicha interaktiv o'quv loyihalari: simulyatsiyalar, vizual tushuntirishlar, masalalar generatori va viktorinalar.</p>
+<div class="stats" id="stats"></div>
+</div>
+</section>
+
+<section class="wrap" id="loyihalar">
+<div class="tools">
+<div class="chips" id="chips" role="tablist" aria-label="Fanlar"></div>
+<input id="q" type="search" placeholder="🔍 Loyiha qidirish…" aria-label="Qidirish">
+</div>
+<div class="grid" id="cards"></div>
+<p class="empty" id="empty" hidden>Hech narsa topilmadi. Boshqa so'z bilan qidirib ko'ring.</p>
+<noscript>
+<ul>
+<li><a href="toplamlar/index.html">To'plamlar</a></li>
+<li><a href="mulohazalar/index.html">Mulohazalar va rost-yolg'on jadvallari</a></li>
+<li><a href="munosabat/index.html">Munosabatlar va ularning matrisasi</a></li>
+<li><a href="tarmoq/index.html">Kompyuter tarmoqlari</a></li>
+<li><a href="database/index.html">Ma’lumotlar bazasi laboratoriyasi</a></li>
+<li><a href="algebra/index.html">Determinantlar</a></li>
+<li><a href="kvadrat/index.html">Kvadrat tenglama</a></li>
+<li><a href="tibbiyot/index.html">Qon aylanishi va nerv tizimi</a></li>
+<li><a href="fizika/index.html">Aylanma harakat dinamikasi</a></li>
+<li><a href="onatili/index.html">Ona tili laboratoriyasi</a></li>
+<li><a href="fonetika/index.html">Fonetik me'yorlar</a></li>
+<li><a href="engiliztili/index.html">Ko‘p tilli lug‘at va talaffuz laboratoriyasi</a></li>
+</ul>
+</ul>
+</noscript>
+</section>
+
+<section class="wrap about" id="haqida">
+<h2>Platforma haqida</h2>
+<p>Yangi loyiha qo'shishni istasangiz takliflaringizni admin bilan bog'laning. Loyihadan chiqish uchun yuqoridagi «🏠 Bosh sahifa» tugmasidan foydalaning. </br>Admin: Ro'zimov G'ayrat tel: +998999690587</p>
+</section>
+</main>
+
+<footer><div class="wrap">© <span id="yr"></span> bilimdonlar.uz · Ta'lim uchun interaktiv loyihalar</div></footer>
+<script src="projects.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
